@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(167, 194, 218);
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 3vw 6vw;
+    background-color: rgb(167, 194, 218);
+}
+
+#container{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 3vw;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px grey;
+    position: relative;
+}
+
+#container h1{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 5.5vw;
+}
+
+#inputbox{
+    margin-top: 4vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+#inputbox label{
+    width: 100%;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+#inputbox input{
+    border-radius: 5px;
+    padding: 0px 1.5vw;
+    height: 7vh;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 98%;
+    transition: all 0.1s linear;
+}
+
+#inputbox input:hover{
+    border: 1px solid rgb(13, 94, 243);
+}
+
+#btns{
+    margin-top: 10px;
+}
+
+button{
+    text-align: center;
+    display: inline;
+    padding: 1.2vh 2.4vh ;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: rgb(39, 74, 230);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2%;
+    transition: all 0.3s;
+}
+
+#addItem:hover{
+    background-color: rgb(26, 189, 26);
+}
+#clearItem:hover{
+    background-color: rgb(231, 62, 62);
+}
+
+#total{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#listItem{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#showItem{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(210, 220, 228);
+    box-shadow: 1px 1px 6px grey ;
+    padding: 4px 20px ;
+    align-items: center;
+}
+
+#showItem div{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width:700px){
+    #container{
+        width: 80%;
+        /* height: 100%; */
+        padding: 1vw;
+    }
+    #container h1{
+        letter-spacing: 2px;
+        font-size: 4vw;
+        letter-spacing: -2px;
+    }
+    #inputbox{
+        margin-top: 1vw;
+        width: 100%;
+        padding: 0px 3vh;
+        gap: 1vh;
+    }
+    #inputbox label{
+        width: 100%;
+        font-size: 2vw;
+    }
+    #inputbox input{
+        border-radius: 5px;
+        font-size: 1.3rem;
+        padding: 0px 1.5vw;
+        height: 7vh;
+        width: 98%;
+    }
+    #btns{
+        padding-left: 2vw;
+        margin-top: 2vh;
+    }
+    button{
+        padding: 0.8rem 2rem;
+        font-size: 1.2em;
+    }
+    #listItem{
+       padding: 1vh 2.5vh ;
+        width: 100%;
+    }
+    #showItem {
+        font-size:1.6rem;
+        padding: 1vh 3vh;
+    }
+}
